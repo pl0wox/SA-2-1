@@ -2,10 +2,6 @@
 #include "Data.h"
 
 using namespace std;
-
-//*******************
-// Constructor      *
-//*******************
 template<typename T>
 classStack<T>::classStack(int size)
 {
@@ -13,10 +9,6 @@ classStack<T>::classStack(int size)
 	stackSize = size; 
 	top = -1;
 }
-//*************************************************
-// Member function push pushes the argument onto  *
-// the stack.                                     *
-//*************************************************
 
 template<typename T>
 void classStack<T>::push(T num)
@@ -31,11 +23,6 @@ void classStack<T>::push(T num)
 		stackArray[top] = num;
 	}
 }
-//****************************************************
-// Member function pop pops the value at the top     *
-// of the stack off, and copies it into the variable *
-// passed as an argument.                            *
-//****************************************************
 
 template<typename T>
 void classStack<T>::pop(T &num)
@@ -50,10 +37,6 @@ void classStack<T>::pop(T &num)
 		top--;
 	}
 }
-//***************************************************
-// Member function isFull returns true if the stack *
-// is full, or false otherwise.                     *
-//***************************************************
 
 template<typename T>
 bool classStack<T>::isFull()
@@ -66,10 +49,7 @@ bool classStack<T>::isFull()
 		status = false;
 	return status;
 }
-//****************************************************
-// Member function isEmpty returns true if the stack *
-// is empty, or false otherwise.                     *
-//****************************************************
+
 template<typename T>
 bool classStack<T>::isEmpty()
 {
